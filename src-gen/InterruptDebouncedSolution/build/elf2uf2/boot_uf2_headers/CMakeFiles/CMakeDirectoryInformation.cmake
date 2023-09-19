@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/foobar/pico-sdk/src/common/boot_uf2")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/elf2uf2")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/elf2uf2")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

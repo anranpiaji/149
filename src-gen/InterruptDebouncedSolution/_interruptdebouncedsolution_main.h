@@ -27,17 +27,17 @@ typedef struct {
     struct self_base_t base;
     
     
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     _interruptdebouncedsolution_main_a_t _lf_a;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     reaction_t _lf__reaction_0;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     reaction_t _lf__reaction_1;
     trigger_t _lf__startup;
     reaction_t* _lf__startup_reactions[1];
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     trigger_t _lf__a;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     reaction_t* _lf__a_reactions[1];
 } _interruptdebouncedsolution_main_main_self_t;
 _interruptdebouncedsolution_main_main_self_t* new__interruptdebouncedsolution_main();

@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/foobar/pico-sdk/tools/pioasm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/pioasm
+CMAKE_BINARY_DIR = /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/pioasm
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/pioasm/CMakeFiles /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/pioasm//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/pioasm/CMakeFiles /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/pioasm//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/pioasm/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/pioasm/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

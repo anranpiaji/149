@@ -1,0 +1,54 @@
+target C {
+    platform: {
+      name: "rp2040",
+      board: "pololu_3pi_2040_robot"
+    },
+    threading: false,
+    keepalive: true
+}
+import Display from "Display.lf"
+preamble {=
+    #include <stdio.h>
+    #include <pico/stdlib.h>
+    #include <hardware/gpio.h>
+=}
+reactor TwoMode{
+    input a: physical action;
+    input flag: int;
+    #action = a;
+    d = new Display()
+    state my_time: int=0
+    initial mode One{
+        timer t1(0,1 s)
+        reaction(t1) -> d.line0 {=
+            #my_time->value=my_time->value+1;
+            static char buf0[17];
+            snprintf(buf0,17,my_time->value+1\n);
+            snprintf(my_time->value+1\n);
+            lf_set(d.lin0,buf0);
+        =}
+        reaction(a)->Two{=
+            if(flag==1){
+                lf_set_mode(Two);
+            }
+        =}
+    }
+    mode Two{
+        timer t2(0,500 ms)
+        reaction(t2)->d.line0{=
+            if(my_time->value>=1)
+            {
+                #my_time->value=my_time->value-1;
+                static char buf0[17];
+                snprintf(buf0,17,my_time->value-1\n);
+                lf_set(d.lin0,buf0);
+            }
+            
+        =}
+        reaction(a)->One{=
+            if(flag==0){
+                lf_set_mode(One);
+            }
+        =}
+    }
+}

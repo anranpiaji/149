@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution
+CMAKE_SOURCE_DIR = /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build
+CMAKE_BINARY_DIR = /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/InterruptDebouncedSolution.dir/depend.make
@@ -72,49 +72,49 @@ include CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj: ../lib/schedule.c
 CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj -c /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/lib/schedule.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.obj -c /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/lib/schedule.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/lib/schedule.c > CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/lib/schedule.c > CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.i
 
 CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/lib/schedule.c -o CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/lib/schedule.c -o CMakeFiles/InterruptDebouncedSolution.dir/lib/schedule.c.s
 
 CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj: ../_interruptdebouncedsolution_main.c
 CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj -c /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.obj -c /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c > CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c > CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.i
 
 CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c -o CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/_interruptdebouncedsolution_main.c -o CMakeFiles/InterruptDebouncedSolution.dir/_interruptdebouncedsolution_main.c.s
 
 CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj: ../InterruptDebouncedSolution.c
 CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj -c /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.obj -c /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c > CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.i
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c > CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.i
 
 CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c -o CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.s
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/InterruptDebouncedSolution.c -o CMakeFiles/InterruptDebouncedSolution.dir/InterruptDebouncedSolution.c.s
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i: cmake_force
@@ -128,7 +128,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i: cmake_force
@@ -142,7 +142,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_platform/platform.c.i: cmake_force
@@ -156,7 +156,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_claim/claim.c.i: cmake_force
@@ -170,7 +170,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_sync/sync.c.i: cmake_force
@@ -184,7 +184,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq.c.i: cmake_force
@@ -197,7 +197,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.i: cmake_force
@@ -211,7 +211,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj: /home/foobar/pico-sdk/src/common/pico_sync/sem.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.obj -c /home/foobar/pico-sdk/src/common/pico_sync/sem.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/sem.c.i: cmake_force
@@ -225,7 +225,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_s
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj: /home/foobar/pico-sdk/src/common/pico_sync/lock_core.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.obj -c /home/foobar/pico-sdk/src/common/pico_sync/lock_core.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/lock_core.c.i: cmake_force
@@ -239,7 +239,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_s
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj: /home/foobar/pico-sdk/src/common/pico_sync/mutex.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.obj -c /home/foobar/pico-sdk/src/common/pico_sync/mutex.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/mutex.c.i: cmake_force
@@ -253,7 +253,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_s
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj: /home/foobar/pico-sdk/src/common/pico_sync/critical_section.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.obj -c /home/foobar/pico-sdk/src/common/pico_sync/critical_section.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_sync/critical_section.c.i: cmake_force
@@ -267,7 +267,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_s
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj: /home/foobar/pico-sdk/src/common/pico_time/time.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.obj -c /home/foobar/pico-sdk/src/common/pico_time/time.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/time.c.i: cmake_force
@@ -281,7 +281,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_t
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj: /home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.obj -c /home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_time/timeout_helper.c.i: cmake_force
@@ -295,7 +295,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_t
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_timer/timer.c.i: cmake_force
@@ -309,7 +309,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj: /home/foobar/pico-sdk/src/common/pico_util/datetime.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.obj -c /home/foobar/pico-sdk/src/common/pico_util/datetime.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/datetime.c.i: cmake_force
@@ -323,7 +323,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_u
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj: /home/foobar/pico-sdk/src/common/pico_util/pheap.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.obj -c /home/foobar/pico-sdk/src/common/pico_util/pheap.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/pheap.c.i: cmake_force
@@ -337,7 +337,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_u
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj: /home/foobar/pico-sdk/src/common/pico_util/queue.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.obj -c /home/foobar/pico-sdk/src/common/pico_util/queue.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_util/queue.c.i: cmake_force
@@ -351,7 +351,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/common/pico_u
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_uart/uart.c.i: cmake_force
@@ -365,7 +365,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i: cmake_force
@@ -379,7 +379,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_pll/pll.c.i: cmake_force
@@ -393,7 +393,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i: cmake_force
@@ -407,7 +407,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i: cmake_force
@@ -421,7 +421,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i: cmake_force
@@ -434,7 +434,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_divider/divider.S.i: cmake_force
@@ -448,7 +448,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i: cmake_force
@@ -462,7 +462,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_printf/printf.c.i: cmake_force
@@ -475,7 +475,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.i: cmake_force
@@ -489,7 +489,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i: cmake_force
@@ -502,7 +502,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_divider/divider.S.i: cmake_force
@@ -515,7 +515,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.i: cmake_force
@@ -529,7 +529,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i: cmake_force
@@ -543,7 +543,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_math.c.i: cmake_force
@@ -556,7 +556,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.i: cmake_force
@@ -569,7 +569,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.i: cmake_force
@@ -582,7 +582,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.i: cmake_force
@@ -596,7 +596,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i: cmake_force
@@ -610,7 +610,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_math.c.i: cmake_force
@@ -623,7 +623,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.i: cmake_force
@@ -637,7 +637,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i: cmake_force
@@ -650,7 +650,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.i: cmake_force
@@ -663,7 +663,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj: /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building ASM object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj   -c /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.i: cmake_force
@@ -677,7 +677,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i: cmake_force
@@ -691,7 +691,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i: cmake_force
@@ -705,7 +705,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i: cmake_force
@@ -719,7 +719,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i: cmake_force
@@ -733,7 +733,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i: cmake_force
@@ -747,7 +747,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i: cmake_force
@@ -761,7 +761,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i: cmake_force
@@ -775,7 +775,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i: cmake_force
@@ -789,7 +789,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: /home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj -c /home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/hardware_flash/flash.c.i: cmake_force
@@ -803,7 +803,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/ha
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i: cmake_force
@@ -817,7 +817,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/p
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i: cmake_force
@@ -831,7 +831,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/p
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd.c.i: cmake_force
@@ -845,7 +845,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/d
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i: cmake_force
@@ -859,7 +859,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/d
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i: cmake_force
@@ -873,7 +873,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i: cmake_force
@@ -887,7 +887,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i: cmake_force
@@ -901,7 +901,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i: cmake_force
@@ -915,7 +915,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i: cmake_force
@@ -929,7 +929,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i: cmake_force
@@ -943,7 +943,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i: cmake_force
@@ -957,7 +957,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i: cmake_force
@@ -971,7 +971,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i: cmake_force
@@ -985,7 +985,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i: cmake_force
@@ -999,7 +999,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i: cmake_force
@@ -1013,7 +1013,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i: cmake_force
@@ -1027,7 +1027,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/tusb.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/tusb.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/tusb.c.i: cmake_force
@@ -1041,7 +1041,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/t
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: /home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj -c /home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i: cmake_force
@@ -1055,7 +1055,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/lib/tinyusb/src/c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i: cmake_force
@@ -1069,7 +1069,7 @@ CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pi
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/flags.make
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: /home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj: CMakeFiles/InterruptDebouncedSolution.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -MF CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d -o CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj -c /home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c
 
 CMakeFiles/InterruptDebouncedSolution.dir/home/foobar/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i: cmake_force
@@ -1236,13 +1236,13 @@ InterruptDebouncedSolution.elf: CMakeFiles/InterruptDebouncedSolution.dir/build.
 InterruptDebouncedSolution.elf: core/libcore.a
 InterruptDebouncedSolution.elf: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 InterruptDebouncedSolution.elf: CMakeFiles/InterruptDebouncedSolution.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable InterruptDebouncedSolution.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX executable InterruptDebouncedSolution.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/InterruptDebouncedSolution.dir/link.txt --verbose=$(VERBOSE)
-	/usr/bin/arm-none-eabi-objcopy -Oihex /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.hex
-	/usr/bin/arm-none-eabi-objcopy -Obinary /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.bin
-	/usr/bin/arm-none-eabi-objdump -h /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf > InterruptDebouncedSolution.dis
-	/usr/bin/arm-none-eabi-objdump -d /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf >> InterruptDebouncedSolution.dis
-	elf2uf2/elf2uf2 /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.uf2
+	/usr/bin/arm-none-eabi-objcopy -Oihex /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.hex
+	/usr/bin/arm-none-eabi-objcopy -Obinary /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.bin
+	/usr/bin/arm-none-eabi-objdump -h /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf > InterruptDebouncedSolution.dis
+	/usr/bin/arm-none-eabi-objdump -d /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf >> InterruptDebouncedSolution.dis
+	elf2uf2/elf2uf2 /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf InterruptDebouncedSolution.uf2
 
 # Rule to build all files generated by this target.
 CMakeFiles/InterruptDebouncedSolution.dir/build: InterruptDebouncedSolution.elf
@@ -1253,6 +1253,6 @@ CMakeFiles/InterruptDebouncedSolution.dir/clean:
 .PHONY : CMakeFiles/InterruptDebouncedSolution.dir/clean
 
 CMakeFiles/InterruptDebouncedSolution.dir/depend:
-	cd /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/CMakeFiles/InterruptDebouncedSolution.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/CMakeFiles/InterruptDebouncedSolution.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/InterruptDebouncedSolution.dir/depend
 

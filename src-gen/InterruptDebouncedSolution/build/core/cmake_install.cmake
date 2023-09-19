@@ -1,8 +1,8 @@
-# Install script for directory: /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/core
+# Install script for directory: /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/core
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foobar/zhanganran/149")
+  set(CMAKE_INSTALL_PREFIX "/home/foobar/lf-3pi-Hanson-Li-lchanggle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

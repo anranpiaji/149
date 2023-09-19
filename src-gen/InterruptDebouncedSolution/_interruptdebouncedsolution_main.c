@@ -2,7 +2,10 @@
 #include "include/InterruptDebouncedSolution/InterruptDebouncedSolution.h"
 #include "_interruptdebouncedsolution_main.h"
 // *********** From the preamble, verbatim:
-#line 16 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+#line 16 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
+instant_t latter_logical_time=0;
+instant_t previous_logical_time=0;
+instant_t previous_physical_time=0;
 static void* action;
 void callback(uint gpio, uint32_t event_mask){
     if(lf_time_physical_elapsed()-previous_physical_time>=200000000){
@@ -17,10 +20,7 @@ void callback(uint gpio, uint32_t event_mask){
 void _interruptdebouncedsolution_mainreaction_function_0(void* instance_args) {
     _interruptdebouncedsolution_main_main_self_t* self = (_interruptdebouncedsolution_main_main_self_t*)instance_args; SUPPRESS_UNUSED_WARNING(self);
     _interruptdebouncedsolution_main_a_t* a = &self->_lf_a;
-    #line 25 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
-    instant_t latter_logical_time=0;
-    instant_t previous_logical_time=0;
-    instant_t previous_physical_time=0;
+    #line 28 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     bool irq_on= true;
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_IN);
@@ -42,7 +42,7 @@ void _interruptdebouncedsolution_mainreaction_function_1(void* instance_args) {
     a->is_present = (bool)self->_lf__a.status;
     a->has_value = ((self->_lf__a.tmplt.token) != NULL && (self->_lf__a.tmplt.token)->value != NULL);
     _lf_replace_template_token((token_template_t*)a, (self->_lf__a.tmplt.token));
-    #line 40 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 41 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     previous_logical_time=latter_logical_time;
     latter_logical_time=lf_time_logical()/1000000;
     printf("Logical time is:%lld msec.\n",latter_logical_time-previous_logical_time);
@@ -51,37 +51,37 @@ void _interruptdebouncedsolution_mainreaction_function_1(void* instance_args) {
 #include "include/api/set_undef.h"
 _interruptdebouncedsolution_main_main_self_t* new__interruptdebouncedsolution_main() {
     _interruptdebouncedsolution_main_main_self_t* self = (_interruptdebouncedsolution_main_main_self_t*)_lf_new_reactor(sizeof(_interruptdebouncedsolution_main_main_self_t));
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf_a._base.trigger = &self->_lf__a;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf_a.parent = (self_base_t*)self;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.number = 0;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.function = _interruptdebouncedsolution_mainreaction_function_0;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.self = self;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.deadline_violation_handler = NULL;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.STP_handler = NULL;
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.name = "?";
-    #line 24 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 27 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_0.mode = NULL;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.number = 1;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.function = _interruptdebouncedsolution_mainreaction_function_1;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.self = self;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.deadline_violation_handler = NULL;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.STP_handler = NULL;
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.name = "?";
-    #line 39 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 40 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__reaction_1.mode = NULL;
     #ifdef FEDERATED_DECENTRALIZED
     self->_lf__startup.intended_tag = (tag_t) { .time = NEVER, .microstep = 0u};
@@ -91,26 +91,26 @@ _interruptdebouncedsolution_main_main_self_t* new__interruptdebouncedsolution_ma
     self->_lf__startup.reactions = &self->_lf__startup_reactions[0];
     self->_lf__startup.number_of_reactions = 1;
     self->_lf__startup.is_timer = false;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a.last = NULL;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     #ifdef FEDERATED_DECENTRALIZED
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a.intended_tag = (tag_t) { .time = NEVER, .microstep = 0u};
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     #endif // FEDERATED_DECENTRALIZED
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a_reactions[0] = &self->_lf__reaction_1;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a.reactions = &self->_lf__a_reactions[0];
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a.number_of_reactions = 1;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     #ifdef FEDERATED
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     self->_lf__a.physical_time_of_arrival = NEVER;
-    #line 23 "/home/foobar/zhanganran/149/src/InterruptDebouncedSolution.lf"
+    #line 26 "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src/InterruptDebouncedSolution.lf"
     #endif // FEDERATED
     self->_lf__a.is_physical = true;
     

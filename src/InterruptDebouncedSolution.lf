@@ -13,6 +13,9 @@ preamble {=
 =}
 main reactor{
     preamble {=
+    instant_t latter_logical_time=0;
+    instant_t previous_logical_time=0;
+    instant_t previous_physical_time=0;
     static void* action;
     void callback(uint gpio, uint32_t event_mask){
         if(lf_time_physical_elapsed()-previous_physical_time>=200000000){
@@ -22,9 +25,7 @@ main reactor{
     =}
     physical action a
     reaction(startup)->a{=
-    instant_t latter_logical_time=0;
-    instant_t previous_logical_time=0;
-    instant_t previous_physical_time=0;
+
     bool irq_on= true;
     gpio_init(PICO_DEFAULT_LED_PIN);
     gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_IN);

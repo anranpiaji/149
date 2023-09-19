@@ -1,8 +1,8 @@
-# Install script for directory: /home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution
+# Install script for directory: /home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/foobar/zhanganran/149")
+  set(CMAKE_INSTALL_PREFIX "/home/foobar/lf-3pi-Hanson-Li-lchanggle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/pico-sdk/cmake_install.cmake")
+  include("/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/pico-sdk/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/core/cmake_install.cmake")
+  include("/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/core/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE MESSAGE_NEVER FILES "/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE MESSAGE_NEVER FILES "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/InterruptDebouncedSolution.elf")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/InterruptDebouncedSolution.elf" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/InterruptDebouncedSolution.elf")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -65,5 +65,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/foobar/zhanganran/149/src-gen/InterruptDebouncedSolution/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/foobar/lf-3pi-Hanson-Li-lchanggle/src-gen/InterruptDebouncedSolution/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
