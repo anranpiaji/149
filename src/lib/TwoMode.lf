@@ -4,8 +4,9 @@ target C {
       board: "pololu_3pi_2040_robot"
     },
     threading: false,
-    keepalive: true
-}
+    files: ["../../robot-lib/"],  // Needed to find display.h
+    cmake-include: ["../../robot-lib/robot-lib.txt"]  // Needed to find display.h
+  }
 import Display from "Display.lf"
 preamble {=
     #include <stdio.h>
@@ -13,42 +14,46 @@ preamble {=
     #include <hardware/gpio.h>
 =}
 reactor TwoMode{
-    input a: physical action;
-    input flag: int;
+    preamble{=
+    int my_time=0;
+    =}
+    input a: void *;
     #action = a;
     d = new Display()
-    state my_time: int=0
+    // state my_time: int=0
     initial mode One{
         timer t1(0,1 s)
         reaction(t1) -> d.line0 {=
-            #my_time->value=my_time->value+1;
+            my_time=my_time+1;
             static char buf0[17];
-            snprintf(buf0,17,my_time->value+1\n);
-            snprintf(my_time->value+1\n);
-            lf_set(d.lin0,buf0);
+            snprintf(buf0,17,"%d\n",my_time);
+            lf_set(d.line0,buf0);
         =}
-        reaction(a)->Two{=
-            if(flag==1){
-                lf_set_mode(Two);
-            }
+        reaction(a)-> reset(Two),d.line1 {=
+            static char buf1[17];
+            snprintf(buf1,17,1);
+            lf_set(d.line1,buf1);
+            lf_set_mode(Two);
+
         =}
     }
     mode Two{
         timer t2(0,500 ms)
         reaction(t2)->d.line0{=
-            if(my_time->value>=1)
-            {
-                #my_time->value=my_time->value-1;
-                static char buf0[17];
-                snprintf(buf0,17,my_time->value-1\n);
-                lf_set(d.lin0,buf0);
-            }
+            // if(my_time->value>=1)
+            // {
+            my_time=my_time-1;
+            static char buf0[17];
+            snprintf(buf0,17,"%d\n",my_time);
+            lf_set(d.line0,buf0);
+            // }
             
         =}
-        reaction(a)->One{=
-            if(flag==0){
-                lf_set_mode(One);
-            }
+        reaction(a)->reset(One),d.line1{=
+            static char buf1[17];
+            snprintf(buf1,17,0);
+            lf_set(d.line1,buf1);
+            lf_set_mode(One);
         =}
     }
 }
