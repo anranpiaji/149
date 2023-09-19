@@ -38,6 +38,6 @@ main reactor{
     =}
     reaction(a)->m.a{=
         action = a;
-        lf_set(m.a,action->self);
+        lf_set(m.a,a);
     =}
 }
