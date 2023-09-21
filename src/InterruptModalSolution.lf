@@ -15,17 +15,23 @@ preamble {=
 
 
 main reactor{
-    m=new TwoMode()
+    m=new TwoMode() 
+    timer t1(0,1s)
+    timer t2(0,500ms)
+    // state flag: int=0
+    // state time_flag: int=0
     preamble {=
     static void* action;
+    int flag=0;
+    int time_flag1=0;
+    int time_flag2=0;
     void callback(uint gpio, uint32_t event_mask){
         lf_schedule(action,0);
     }
+    
     =}
-
-
     physical action a
-    reaction(startup){=
+    reaction(startup)->a{=
         bool irq_on= true;
         gpio_init(PICO_DEFAULT_LED_PIN);
         gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_IN);
@@ -33,11 +39,20 @@ main reactor{
         PICO_DEFAULT_LED_PIN,
         GPIO_IRQ_EDGE_RISE,
         irq_on,
-        callback 
+        callback
         ); 
+        action = a;
+    =}
+    reaction(t1)->m.time_flag1{=
+        time_flag1=1-time_flag1;
+        lf_set(m.time_flag1,time_flag1);
+    =}
+    reaction(t2)->m.time_flag2{=
+        time_flag2=1-time_flag2;
+        lf_set(m.time_flag2,time_flag2);
     =}
     reaction(a)->m.a{=
-        action = a;
-        lf_set(m.a,a);
+        flag=1-flag;
+        lf_set(m.a,flag);
     =}
 }

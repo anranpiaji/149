@@ -21,6 +21,7 @@ main reactor{
         if(lf_time_physical_elapsed()-previous_physical_time>=200000000){
             lf_schedule(action,0);
         }
+        previous_physical_time=lf_time_physical_elapsed();
     }
     =}
     physical action a
@@ -41,6 +42,5 @@ main reactor{
         previous_logical_time=latter_logical_time;
         latter_logical_time=lf_time_logical()/1000000;
         printf("Logical time is:%lld msec.\n",latter_logical_time-previous_logical_time);
-        previous_physical_time=lf_time_physical_elapsed();
     =}
 }
