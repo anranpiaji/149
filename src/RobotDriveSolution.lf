@@ -30,8 +30,8 @@
         if (drive->value) {
           lf_set_mode(DRIVING);
           lf_set(notify, "DRIVING");
-          lf_set(motor_left_power,0.0f);
-          lf_set(motor_right_power,0.0f);
+          lf_set(motor_left_power,0.1f);
+          lf_set(motor_right_power,0.1f);
         }
       =}
     }
@@ -41,8 +41,8 @@
         if (!drive->value) {
           lf_set_mode(STOPPED);
           lf_set(notify, "STOPPED");
-          lf_set(motor_left_power,0.1f);
-          lf_set(motor_right_power,0.1f);
+          lf_set(motor_left_power,0.0f);
+          lf_set(motor_right_power,0.0f);
         }
       =}
     }

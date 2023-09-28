@@ -23,11 +23,11 @@
   reactor AngleToDistance{
     input left_angle:int32_t;
     input right_angle:int32_t;
-    output left_distance:int32_t;
-    output right_distance:int32_t;
+    output left_distance:float;
+    output right_distance:float;
     preamble{=    
     float angle2Distance(int32_t angle){
-        return (float)angle/360*3.14*WHEEL_DIAMETER;
+        return (float)angle/360.0*3.14*WHEEL_DIAMETER;
     }
     =}
     reaction(left_angle)->left_distance {=
