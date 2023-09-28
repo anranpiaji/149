@@ -1,0 +1,68 @@
+target C {
+    platform: {
+      name: "rp2040",
+      board: "pololu_3pi_2040_robot"
+    },
+    threading: false,
+}
+
+import Motors from "lib/Motors.lf";
+import Display from "lib/Display.lf";
+import GyroAngle from "lib/IMU.lf";
+
+reactor RobotSquare {
+    //
+
+    input gyro_angle:float;
+    output motor_left_power:float;
+    output motor_right_power:float;
+
+    state travelled_distance:float = 0.0;
+    state turned_angle: float = 0.0;
+
+
+
+    initial mode DRIVE_FORWARD {
+        reaction(startup) -> motor_left_power, motor_right_power {=
+            lf_set(motor_left_power,0.1f);
+            lf_set(motor_right_power,0.1f);
+        =}
+        reaction(gyro_angle) -> TURN_90_DEGREES {=
+            self->travelled_distance += 0.1f; // Assuming a constant speed and a fixed reaction interval
+            if (self->travelled_distance >= 0.5f) { // Half a meter
+                lf_set_mode(TURN_90_DEGREES);
+            }
+        =}
+    }
+
+    mode TURN_90_DEGREES {
+        reaction(startup) -> motor_left_power, motor_right_power {=
+            lf_set(motor_left_power,0.1f);
+            lf_set(motor_right_power,-0.1f);// Assuming turning left requires opposite motor powers
+        =}
+        reaction(gyro_angle) -> DRIVE_FORWARD {=
+            self->turned_angle = gyro_angle->value;
+            if (self->turned_angle >= 90.0f) { // 90 degrees
+                lf_set_mode(DRIVE_FORWARD);
+                self->travelled_distance = 0.0f; // Reset distance for the next drive phase
+                self->turned_angle = 0.0f; // Reset angle for the next turn phase
+            }
+        =}
+    }
+}
+
+main reactor {
+    timer t(0, 100 msec); // Assuming a 100 msec interval for simplicity
+    robotSquare = new RobotSquare();
+    motors = new Motors();
+    display = new Display();
+    gyroAngle = new GyroAngle();
+
+    reaction(t)->gyroAngle.trigger{=
+        lf_set(gyroAngle.trigger,true);
+    =}
+    // Trigger the GyroAngle reactor at regular intervals
+    robotSquare.motor_left_power -> motors.left_power;
+    robotSquare.motor_right_power -> motors.right_power;
+    gyroAngle.z -> robotSquare.gyro_angle;
+}

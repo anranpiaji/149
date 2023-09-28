@@ -1,0 +1,75 @@
+/**
+ * Display encoder measurements from the wheels of the
+ * <a href="https://www.pololu.com/docs/0J86">Pololu 3pi+ 2040 robot</a>.
+ * @author Abhi Gundrala
+ * @author Edward A. Lee
+ */
+ target C {
+    platform: {
+      name: "rp2040",
+      board: "pololu_3pi_2040_robot"
+    },
+    threading: false,
+  }
+
+  import Display from "lib/Display.lf"
+  import Encoders from "lib/Encoders.lf"
+
+  preamble {=
+    #include <math.h> 
+    #define WHEEL_DIAMETER 0.03175  //in meters
+  =}
+
+  reactor AngleToDistance{
+    input left_angle:int32_t;
+    input right_angle:int32_t;
+    output left_distance:int32_t;
+    output right_distance:int32_t;
+    preamble{=    
+    float angle2Distance(int32_t angle){
+        return (float)angle/360*3.14*WHEEL_DIAMETER;
+    }
+    =}
+    reaction(left_angle)->left_distance {=
+        lf_set(left_distance,angle2Distance(left_angle->value));
+    =}
+    reaction(right_angle)->right_distance {=
+        lf_set(right_distance,angle2Distance(right_angle->value));
+    =}
+  }
+
+  main reactor {
+    display = new Display()
+    encoder = new Encoders()
+    angletodistance = new AngleToDistance()
+  
+    timer t(0, 1s)
+  
+    reaction(t) -> encoder.trigger {=
+      lf_set(encoder.trigger, true);
+    =}
+  
+    reaction(startup) -> display.line0 {=
+      lf_set(display.line0, "ENCODERS:");
+    =}
+
+    reaction(encoder.left)->angletodistance.left_angle {=
+      lf_set(angletodistance.left_angle, encoder.left->value);
+    =}
+
+    reaction(encoder.right)->angletodistance.right_angle {=
+        lf_set(angletodistance.right_angle, encoder.right->value);
+    =}
+
+    reaction(angletodistance.left_distance) -> display.line1 {=
+      static char buf[17];
+      snprintf(buf, 17, "L: %f", angletodistance.left_distance->value);
+      lf_set(display.line1, buf);
+    =}
+    
+    reaction(angletodistance.right_distance) -> display.line2 {=
+      static char buf[17];
+      snprintf(buf, 17, "R: %f", angletodistance.right_distance->value);
+      lf_set(display.line2, buf); 
+    =}
+  }
