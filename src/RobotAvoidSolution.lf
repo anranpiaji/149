@@ -9,13 +9,19 @@ target C {
 import Motors from "lib/Motors.lf";
 import Display from "lib/Display.lf";
 import GyroAngle from "lib/IMU.lf";
-import Encoders from "lib/Encoders.lf"
+import Encoders from "lib/Encoders.lf";
+import Bump from "lib/Bump.lf";
+
 preamble{=
     #define WHEEL_DIAMETER 0.03175  //in meters
 =}
+
+
 reactor RobotSquare {
     input encoder_distance:float;
     input gyro_angle:float;
+    input bump_left:bool;
+    input bump_right:bool;
     output motor_left_power:float;
     output motor_right_power:float;
     // output robotsquare_travelled_distance:float;
@@ -26,7 +32,7 @@ reactor RobotSquare {
     state turned_angle: float = 0.0;
     state pre_turned_angle: float = 0.0;
 
-
+    logical action back_stop;
 
     initial mode DRIVE_FORWARD {
         reaction(startup) -> motor_left_power, motor_right_power {=
@@ -45,6 +51,14 @@ reactor RobotSquare {
                 lf_set_mode(TURN_90_DEGREES);
             }
         =}
+        reaction(bump_left) ->AVOID_LEFT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_LEFT);
+        =}
+        reaction(bump_right) ->AVOID_RIGHT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_RIGHT);
+        =}
     }
 
     mode TURN_90_DEGREES {
@@ -58,6 +72,53 @@ reactor RobotSquare {
                 self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
                 self->pre_travelled_distance = self->travelled_distance; // Reset angle for the next turn phase
             }
+        =}
+        reaction(bump_left) ->AVOID_LEFT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_LEFT);
+        =}
+        reaction(bump_right) ->AVOID_RIGHT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_RIGHT);
+        =}
+    }
+    mode TURN_270_DEGREES {
+        reaction(gyro_angle) ->  motor_left_power, motor_right_power, DRIVE_FORWARD {=
+            lf_set(motor_left_power,0.1f);
+            lf_set(motor_right_power,-0.1f);// Assuming turning left requires opposite motor powers
+
+            self->turned_angle = gyro_angle->value;
+            if (((self->turned_angle)-(self->pre_turned_angle)) <= -90.0f) { // 90 degrees
+                lf_set_mode(DRIVE_FORWARD);
+                self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
+                self->pre_travelled_distance = self->travelled_distance; // Reset angle for the next turn phase
+            }
+        =}
+        reaction(bump_left) ->AVOID_LEFT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_LEFT);
+        =}
+        reaction(bump_right) ->AVOID_RIGHT, back_stop {=
+            lf_schedule(back_stop,SEC(1));
+            lf_set_mode(AVOID_RIGHT);
+        =}
+    }
+    mode AVOID_LEFT {
+        reaction(encoder_distance) -> motor_left_power, motor_right_power, TURN_90_DEGREES {=
+            lf_set(motor_left_power,-0.1f);
+            lf_set(motor_right_power,-0.1f);// Assuming turning left requires opposite motor powers
+        =}
+        reaction(back_stop)->TURN_90_DEGREES {=
+            lf_set_mode(TURN_90_DEGREES);
+        =}
+    }
+    mode AVOID_RIGHT {
+        reaction(encoder_distance) -> motor_left_power, motor_right_power, TURN_270_DEGREES {=
+            lf_set(motor_left_power,-0.1f);
+            lf_set(motor_right_power,-0.1f);// Assuming turning left requires opposite motor powers
+        =}
+        reaction(back_stop)->TURN_270_DEGREES {=
+            lf_set_mode(TURN_270_DEGREES);
         =}
     }
 }
@@ -86,8 +147,9 @@ main reactor {
     motors = new Motors();
     display = new Display();
     gyroAngle = new GyroAngle();
-    encoder = new Encoders()
-    angletodistance = new AngleToDistance()
+    encoder = new Encoders();
+    angletodistance = new AngleToDistance();
+    bump = new Bump();
 
     reaction(t)->gyroAngle.trigger{=
         lf_set(gyroAngle.trigger,true);
@@ -110,4 +172,7 @@ main reactor {
     encoder.right->angletodistance.right_angle
 
     angletodistance.left_distance->robotSquare.encoder_distance;
+
+    bump.left->robotSquare.bump_left;
+    bump.right->robotSquare.bump_right;
 }
