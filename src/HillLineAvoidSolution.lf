@@ -22,7 +22,7 @@
   import GyroAngle from "lib/IMU.lf"
   import Motors from "lib/Motors.lf"
 
-  reactor LineDetectFlag{
+  reactor Reflect_to_LineDetectType{
     input reflect:uint16_t[5];
     output line_detect_type:int;
     reaction(startup)->line_detect_type{=
@@ -119,7 +119,7 @@
     gyroAngle = new GyroAngle()
     motors = new Motors()
     robotlineback=new RobotLineBack()
-    linedetectflag=new LineDetectFlag()
+    reflect_linedetecttype=new Reflect_to_LineDetectType()
     timer t(0, sample_period)
     // Timer used to display seconds.
     timer seconds(0, 1 s)
@@ -127,8 +127,8 @@
     state count: int = 0
   
     gyroAngle.z -> robotlineback.gyro_angle;
-    line.reflect -> linedetectflag.reflect;
-    linedetectflag.line_detect_type-> robotlineback.line_detect_type;
+    line.reflect -> reflect_linedetecttype.reflect;
+    reflect_linedetecttype.line_detect_type-> robotlineback.line_detect_type;
     robotlineback.motor_left_power -> motors.left_power;
     robotlineback.motor_right_power -> motors.right_power;
 
