@@ -1,0 +1,21 @@
+target C
+preamble {=
+  #include <pico/stdlib.h>
+  #include <math.h>
+=}
+reactor Tilt{
+  input acce1: float; // inputs
+  input acce2: float;
+  input acce3: float;
+  output ang1: double;
+  output ang2: double;
+  output ang3: double;
+  reaction (acce1,acce2,acce3)->ang1,ang2,ang3{=
+  acce1->value=acce1->value<-1?-1:(acce1->value>1?1:acce1->value);
+  acce2->value=acce2->value<-1?-1:(acce2->value>1?1:acce2->value);
+  acce3->value=acce3->value<-1?-1:(acce3->value>1?1:acce3->value);
+  lf_set(ang1,atan((double)acce1->value/pow((double)acce2->value*(double)acce2->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360);
+  lf_set(ang2,atan((double)acce2->value/pow((double)acce1->value*(double)acce1->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360);
+  lf_set(ang3,0);
+  =}
+}
