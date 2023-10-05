@@ -20,7 +20,31 @@
   import Line from "lib/Line.lf"
   import Display from "lib/Display.lf"
   import GyroAngle from "lib/IMU.lf"
-  import Motors from "lib/Motors.lf"
+  import MotorsWithFeedback from "lib/MotorsWithFeedback.lf"
+  import Encoders from "lib/Encoders.lf"
+
+
+  preamble{=
+    #define WHEEL_DIAMETER 0.03175  //in meters
+  =}
+
+  reactor AngleToDistance{
+    input left_angle:int32_t;
+    input right_angle:int32_t;
+    output left_distance:int32_t;
+    output right_distance:int32_t;
+    preamble{=    
+    float angle2Distance(int32_t angle){
+        return angle/360.0*3.14*WHEEL_DIAMETER;
+    }
+    =}
+    reaction(left_angle)->left_distance {=
+        lf_set(left_distance,angle2Distance(left_angle->value));
+    =}
+    reaction(right_angle)->right_distance {=
+        lf_set(right_distance,angle2Distance(right_angle->value));
+    =}
+  }
 
   reactor Reflect_to_LineDetectType{
     input reflect:uint16_t[5];
@@ -29,13 +53,13 @@
       lf_set(line_detect_type,0);
     =}
     reaction(reflect)->line_detect_type{=
-      if(reflect->value[0]!=0){
+      if(reflect->value[0]>800||reflect->value[1]>800){
         lf_set(line_detect_type,1);
       }
-      else if(reflect->value[2]!=0){
+      else if(reflect->value[1]>800||reflect->value[2]>800||reflect->value[3]>800){
         lf_set(line_detect_type,2);
       }
-      else if(reflect->value[4]!=0){
+      else if(reflect->value[3]>800||reflect->value[4]>800){
         lf_set(line_detect_type,3);
       }
       else{
@@ -52,22 +76,53 @@
 
     state turned_angle: float = 0.0;
     state pre_turned_angle: float = 0.0;
+    logical action back_stop;
     initial mode DRIVE_FORWARD {
         reaction(startup) -> motor_left_power, motor_right_power {=
-            lf_set(motor_left_power,0.1f);
-            lf_set(motor_right_power,0.1f);
+            // lf_set(motor_left_power,0.5f);
+            // lf_set(motor_right_power,0.5f);
         =}
-        reaction(line_detect_type) -> motor_left_power, motor_right_power, TURN_90, TURN_AROUND, TURN_270 {=
+        reaction(line_detect_type) -> AVOID_RIGHT, AVOID_FRONT, AVOID_LEFT, back_stop {=
           if(line_detect_type->value==1){
-              lf_set_mode(TURN_90);
+              lf_schedule(back_stop,SEC(0.5));
+              lf_set_mode(AVOID_RIGHT);
           }
           if(line_detect_type->value==2){
-              lf_set_mode(TURN_AROUND);
+              lf_schedule(back_stop,SEC(0.5));
+              lf_set_mode(AVOID_FRONT);
           }
           if(line_detect_type->value==3){
-              lf_set_mode(TURN_270);
+              lf_schedule(back_stop,SEC(0.5));
+              lf_set_mode(AVOID_LEFT);
           }
         =}
+    }
+    mode AVOID_LEFT {
+      reaction(gyro_angle) -> motor_left_power, motor_right_power {=
+          lf_set(motor_left_power,-0.2f);
+          lf_set(motor_right_power,-0.2f);// Assuming turning left requires opposite motor powers
+      =}
+      reaction(back_stop)->TURN_90 {=
+          lf_set_mode(TURN_90);
+      =}
+    }
+    mode AVOID_RIGHT {
+      reaction(gyro_angle) -> motor_left_power, motor_right_power {=
+          lf_set(motor_left_power,-0.2f);
+          lf_set(motor_right_power,-0.2f);// Assuming turning left requires opposite motor powers
+      =}
+      reaction(back_stop)->TURN_270 {=
+          lf_set_mode(TURN_270);
+      =}
+    }
+    mode AVOID_FRONT {
+      reaction(gyro_angle) -> motor_left_power, motor_right_power {=
+          lf_set(motor_left_power,-0.2f);
+          lf_set(motor_right_power,-0.2f);// Assuming turning left requires opposite motor powers
+      =}
+      reaction(back_stop)->TURN_AROUND {=
+          lf_set_mode(TURN_AROUND);
+      =}
     }
     mode TURN_AROUND {
         reaction(gyro_angle) ->  motor_left_power, motor_right_power, DRIVE_FORWARD {=
@@ -75,10 +130,10 @@
             lf_set(motor_right_power,0.1f);// Assuming turning left requires opposite motor powers
 
             self->turned_angle = gyro_angle->value;
-            if (((self->turned_angle)-(self->pre_turned_angle)) >= 180.0f) { // 90 degrees
+            if (((self->turned_angle)-(self->pre_turned_angle)) >= 20.0f) { // 90 degrees
                 self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
-                lf_set(motor_left_power,0.1f);
-                lf_set(motor_right_power,0.1f);
+                lf_set(motor_left_power,0.2f);
+                lf_set(motor_right_power,0.2f);
                 lf_set_mode(DRIVE_FORWARD);
             }
         =}
@@ -89,10 +144,10 @@
           lf_set(motor_right_power,0.1f);// Assuming turning left requires opposite motor powers
 
           self->turned_angle = gyro_angle->value;
-          if (((self->turned_angle)-(self->pre_turned_angle)) >= 90.0f) { // 90 degrees
+          if (((self->turned_angle)-(self->pre_turned_angle)) >= 30.0f) { // 90 degrees
               self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
-              lf_set(motor_left_power,0.1f);
-              lf_set(motor_right_power,0.1f);
+              lf_set(motor_left_power,0.2f);
+              lf_set(motor_right_power,0.2f);
               lf_set_mode(DRIVE_FORWARD);
           }
       =}
@@ -103,10 +158,10 @@
         lf_set(motor_right_power,-0.1f);// Assuming turning left requires opposite motor powers
 
         self->turned_angle = gyro_angle->value;
-        if (((self->turned_angle)-(self->pre_turned_angle)) <= -90.0f) { // 90 degrees
+        if (((self->turned_angle)-(self->pre_turned_angle)) <= -30.0f) { // 90 degrees
             self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
-            lf_set(motor_left_power,0.1f);
-            lf_set(motor_right_power,0.1f);
+            lf_set(motor_left_power,0.2f);
+            lf_set(motor_right_power,0.2f);
             lf_set_mode(DRIVE_FORWARD);
         }
     =}
@@ -117,9 +172,12 @@
     line = new Line()
     disp = new Display()
     gyroAngle = new GyroAngle()
-    motors = new Motors()
+    motors = new MotorsWithFeedback()
     robotlineback=new RobotLineBack()
     reflect_linedetecttype=new Reflect_to_LineDetectType()
+    encoder = new Encoders();
+    angletodistance = new AngleToDistance();
+
     timer t(0, sample_period)
     // Timer used to display seconds.
     timer seconds(0, 1 s)
@@ -127,10 +185,20 @@
     state count: int = 0
   
     gyroAngle.z -> robotlineback.gyro_angle;
+
+    // encoder.left->angletodistance.left_angle;
+    // encoder.right->angletodistance.right_angle;
+    // angletodistance.left_distance->motors.left;
+    // angletodistance.right_distance->motors.right;
+    encoder.left->motors.left;
+    encoder.right->motors.right;
+
     line.reflect -> reflect_linedetecttype.reflect;
     reflect_linedetecttype.line_detect_type-> robotlineback.line_detect_type;
-    robotlineback.motor_left_power -> motors.left_power;
-    robotlineback.motor_right_power -> motors.right_power;
+
+    robotlineback.motor_left_power -> motors.left_speed;
+    robotlineback.motor_right_power -> motors.right_speed;
+  
 
     reaction(startup) -> disp.line0, disp.line1, disp.line2 {=
       lf_set(disp.line0, "CALIBRATING");
@@ -138,8 +206,9 @@
       lf_set(disp.line2, "light and dark.");
     =}
     
-    reaction(t)->gyroAngle.trigger{=
+    reaction(t)->gyroAngle.trigger, encoder.trigger{=
         lf_set(gyroAngle.trigger,true);
+        lf_set(encoder.trigger, true);
     =}
 
     reaction(seconds) -> disp.line3 {=
