@@ -1,0 +1,191 @@
+/**
+ * Display the outputs from the line sensors on the
+ * <a href="https://www.pololu.com/docs/0J86">Pololu 3pi+ 2040 robot</a>.
+ * This program spends the first 10 seconds in calibration mode, during which
+ * you should move the robot over the light and dark areas that you would like
+ * it to detect.  It then switches into measurement mode and displays the
+ * measured reflectance of the five IR sensors.
+ *
+ * @author Abhi Gundrala
+ * @author Edward A. Lee
+ */
+ target C {
+    platform: {
+      name: "rp2040",
+      board: "pololu_3pi_2040_robot"
+    },
+    threading: false,
+  }
+  
+  import Line from "lib/Line.lf"
+  import Display from "lib/Display.lf"
+  import GyroAngle from "lib/IMU.lf"
+  import MotorsWithFeedback from "lib/MotorsWithFeedback.lf"
+  import Encoders from "lib/Encoders.lf"
+  import Accelerometer from "lib/IMU.lf"
+  import Tilt from "lib/Tilt.lf"
+
+
+  preamble{=
+    #define WHEEL_DIAMETER 0.03175  //in meters
+  =}
+
+  reactor AngleToDistance{
+    input left_angle:int32_t;
+    input right_angle:int32_t;
+    output left_distance:int32_t;
+    output right_distance:int32_t;
+    preamble{=    
+    float angle2Distance(int32_t angle){
+        return angle/360.0*3.14*WHEEL_DIAMETER;
+    }
+    =}
+    reaction(left_angle)->left_distance {=
+        lf_set(left_distance,angle2Distance(left_angle->value));
+    =}
+    reaction(right_angle)->right_distance {=
+        lf_set(right_distance,angle2Distance(right_angle->value));
+    =}
+  }
+
+  reactor Reflect_to_LineDetectType{
+    input reflect:uint16_t[5];
+    output line_detect_type:int;
+    reaction(startup)->line_detect_type{=
+      lf_set(line_detect_type,0);
+    =}
+    reaction(reflect)->line_detect_type{=
+      if(reflect->value[0]>800||reflect->value[1]>800){
+        lf_set(line_detect_type,1);
+      }
+      else if(reflect->value[1]>800||reflect->value[2]>800||reflect->value[3]>800){
+        lf_set(line_detect_type,2);
+      }
+      else if(reflect->value[3]>800||reflect->value[4]>800){
+        lf_set(line_detect_type,3);
+      }
+      else{
+        lf_set(line_detect_type,0);
+      }
+    =}
+  }
+
+  reactor RobotLineBack {
+    input pitch_angle:double;
+    input roll_angle:double;
+    input yaw_angle: float;
+    input line_detect_type:int;
+    output motor_left_power:float;
+    output motor_right_power:float;
+
+    state turned_angle: float = 0.0;
+    state pre_turned_angle: float = 0.0;
+    state delta_roll: float = 0.0;
+    state flag_up_down: int = 1;
+    logical action back_stop;
+    initial mode DRIVE_FORWARD {
+        reaction(startup) -> motor_left_power, motor_right_power {=
+          lf_set(motor_left_power,0.2f);
+          lf_set(motor_right_power,0.2f);
+        =}
+        reaction(roll_angle,pitch_angle,yaw_angle)->TURN_AROUND{=
+          if(pitch_angle->value*pitch_angle->value<25&&pitch_angle->value*pitch_angle->value>0&&roll_angle->value*roll_angle->value<25&&roll_angle->value*roll_angle->value>0&&self->flag_up_down==1){
+            self->pre_turned_angle = yaw_angle->value;
+            lf_set_mode(TURN_AROUND);
+          }
+        =}
+        reaction(roll_angle) ->motor_left_power, motor_right_power, back_stop {=
+          self->delta_roll = 0.005 * self->flag_up_down * roll_angle->value;
+          lf_set(motor_left_power,0.2f-self->delta_roll);
+          lf_set(motor_right_power,0.2f+self->delta_roll);
+        =}
+    }
+    mode TURN_AROUND {
+        reaction(yaw_angle) ->  motor_left_power, motor_right_power, DRIVE_FORWARD {=
+            self->flag_up_down = -1;
+            lf_set(motor_left_power,-0.1f);
+            lf_set(motor_right_power,0.1f);// Assuming turning left requires opposite motor powers
+
+            self->turned_angle = yaw_angle->value;
+            if (((self->turned_angle)-(self->pre_turned_angle)) >= 180.0f) { // 90 degrees
+                self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
+                lf_set(motor_left_power,0.2f);
+                lf_set(motor_right_power,0.2f);
+                lf_set_mode(DRIVE_FORWARD);
+            }
+        =}
+    }
+  }
+
+  main reactor(calibration_time: time = 10 s, sample_period: time = 100 ms) {
+    line = new Line()
+    disp = new Display()
+    a = new Accelerometer()
+    gyroAngle = new GyroAngle()
+    motors = new MotorsWithFeedback()
+    robotlineback=new RobotLineBack()
+    reflect_linedetecttype=new Reflect_to_LineDetectType()
+    encoder = new Encoders();
+    angletodistance = new AngleToDistance();
+    tilt= new Tilt()
+    timer t(0, sample_period)
+    // Timer used to display seconds.
+    timer seconds(0, 1 s)
+    timer end_calibration(calibration_time)
+    state count: int = 0
+
+    reaction(t)->gyroAngle.trigger, encoder.trigger, a.trigger{=
+      lf_set(gyroAngle.trigger,true);
+      lf_set(encoder.trigger, true);
+      lf_set(a.trigger, true);
+  =}
+    reaction(a.x, a.y, a.z) -> tilt.acce1,tilt.acce2,tilt.acce3 {=
+      /// TODO: define max string size for line
+      /// based on font you can have 4 or 8 lines 
+      lf_set(tilt.acce1, a.x->value);
+      lf_set(tilt.acce2, a.y->value);
+      lf_set(tilt.acce3, a.z->value);
+    =}
+    tilt.ang2 -> robotlineback.roll_angle;
+    tilt.ang1 -> robotlineback.pitch_angle;
+    gyroAngle.z -> robotlineback.yaw_angle;
+
+    // encoder.left->angletodistance.left_angle;
+    // encoder.right->angletodistance.right_angle;
+    // angletodistance.left_distance->motors.left;
+    // angletodistance.right_distance->motors.right;
+    encoder.left->motors.left;
+    encoder.right->motors.right;
+
+    line.reflect -> reflect_linedetecttype.reflect;
+    reflect_linedetecttype.line_detect_type-> robotlineback.line_detect_type;
+
+    robotlineback.motor_left_power -> motors.left_speed;
+    robotlineback.motor_right_power -> motors.right_speed;
+
+    
+
+
+    reaction(t) -> line.trigger {=
+      lf_set(line.trigger, true);
+    =}
+  
+  reaction(tilt.ang1) -> disp.line1 {=
+    static char buf[17];
+    snprintf(buf, 17, "x: %.2lf", tilt.ang1->value);
+    lf_set(disp.line1, buf);
+  =}
+
+  reaction(tilt.ang2) -> disp.line2 {=
+    static char buf[17];
+    snprintf(buf, 17, "y: %.2lf", tilt.ang2->value);
+    lf_set(disp.line2, buf);
+  =}
+
+  reaction(a.z) -> disp.line3 {=
+    static char buf[17];
+    snprintf(buf, 17, "z: %.2f", a.z->value);
+    lf_set(disp.line3, buf);
+  =}
+  }
+  
