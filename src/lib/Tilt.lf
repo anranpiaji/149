@@ -14,8 +14,8 @@ reactor Tilt{
   acce1->value=acce1->value<-1?-1:(acce1->value>1?1:acce1->value);
   acce2->value=acce2->value<-1?-1:(acce2->value>1?1:acce2->value);
   acce3->value=acce3->value<-1?-1:(acce3->value>1?1:acce3->value);
-  lf_set(ang1,atan((double)acce1->value/pow((double)acce2->value*(double)acce2->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360);
-  lf_set(ang2,atan((double)acce2->value/pow((double)acce1->value*(double)acce1->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360);
+  lf_set(ang1,90/89.05*(atan((double)acce1->value/pow((double)acce2->value*(double)acce2->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360-1));
+  lf_set(ang2,90/90.65*(atan((double)acce2->value/pow((double)acce1->value*(double)acce1->value+(double)acce3->value*(double)acce3->value,0/5))/3.14*360+1.3));
   lf_set(ang3,0);
   =}
 }

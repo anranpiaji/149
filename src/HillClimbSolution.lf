@@ -75,6 +75,7 @@
     input roll_angle:double;
     input yaw_angle: float;
     input line_detect_type:int;
+    input count: int;
     output motor_left_power:float;
     output motor_right_power:float;
 
@@ -88,8 +89,8 @@
           lf_set(motor_left_power,0.2f);
           lf_set(motor_right_power,0.2f);
         =}
-        reaction(roll_angle,pitch_angle,yaw_angle)->TURN_AROUND{=
-          if(pitch_angle->value*pitch_angle->value<25&&pitch_angle->value*pitch_angle->value>0&&roll_angle->value*roll_angle->value<25&&roll_angle->value*roll_angle->value>0&&self->flag_up_down==1){
+        reaction(count,roll_angle,pitch_angle,yaw_angle)->TURN_AROUND{=
+          if(count->value>10&&pitch_angle->value*pitch_angle->value<25&&pitch_angle->value*pitch_angle->value>0&&roll_angle->value*roll_angle->value<25&&roll_angle->value*roll_angle->value>0&&self->flag_up_down==1){
             self->pre_turned_angle = yaw_angle->value;
             lf_set_mode(TURN_AROUND);
           }
@@ -107,7 +108,7 @@
             lf_set(motor_right_power,0.1f);// Assuming turning left requires opposite motor powers
 
             self->turned_angle = yaw_angle->value;
-            if (((self->turned_angle)-(self->pre_turned_angle)) >= 180.0f) { // 90 degrees
+            if (((self->turned_angle)-(self->pre_turned_angle)) >= 165.0f) { // 90 degrees
                 self->pre_turned_angle = self->turned_angle; // Reset distance for the next drive phase
                 lf_set(motor_left_power,0.2f);
                 lf_set(motor_right_power,0.2f);
@@ -134,10 +135,15 @@
     timer end_calibration(calibration_time)
     state count: int = 0
 
-    reaction(t)->gyroAngle.trigger, encoder.trigger, a.trigger{=
+    reaction(t)->gyroAngle.trigger, encoder.trigger, a.trigger, robotlineback.count, disp.line0{=
       lf_set(gyroAngle.trigger,true);
       lf_set(encoder.trigger, true);
       lf_set(a.trigger, true);
+      self->count=self->count+1;
+      lf_set(robotlineback.count,self->count);
+      static char buf[17];
+      snprintf(buf, 17, "z: %d", self->count);
+      lf_set(disp.line0, buf);
   =}
     reaction(a.x, a.y, a.z) -> tilt.acce1,tilt.acce2,tilt.acce3 {=
       /// TODO: define max string size for line
