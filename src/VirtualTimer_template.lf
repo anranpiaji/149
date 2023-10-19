@@ -124,6 +124,8 @@ main reactor {
   
   reaction(print_hw_timer){=
       /* TODO for 9.2.2 */
+        uint32_t timerValue = timer_hw->timelr;
+        printf("%u\n,timerValue");
   =}
 
   /* TODO: add reaction and timer to create the environment to test */
