@@ -14,6 +14,7 @@ preamble {=
 
 main reactor {
   preamble {=
+    bool led_on=false;
 
     typedef void (*virtual_timer_callback_t)(void);
  
@@ -89,40 +90,47 @@ main reactor {
       }
       return head;
     }
-    /*********************************************
-        DO NOT CHANGE THE CODE ABOVE
-    *********************************************/
+    // /*********************************************
+    //     DO NOT CHANGE THE CODE ABOVE
+    // *********************************************/
 
-    /* You can also create your own linked list functions here. */
-    void toggle_led_callback(void) {
-    // Toggle the LED state
-    gpio_put(PICO_DEFAULT_LED_PIN, !gpio_get(PICO_DEFAULT_LED_PIN));
-    }
+    // /* You can also create your own linked list functions here. */
+    // void toggle_led_callback(void) {
+    // // Toggle the LED state
+    // gpio_put(PICO_DEFAULT_LED_PIN, !gpio_get(PICO_DEFAULT_LED_PIN));
+    // }
 
-    // In your startup reaction:
-    virtual_timer_init();
+    // // In your startup reaction:
+    // virtual_timer_init();
 
-    // Create a timer that toggles the LED every 1 second
-    uint32_t timer_id = virtual_timer_start(1000000, toggle_led_callback);
+    // // Create a timer that toggles the LED every 1 second
+    // uint32_t timer_id = virtual_timer_start(1000000, toggle_led_callback);
 
 
 
     void lab5_timer_irq_handler(void){
         /* TODO */
-        // Clear the alarm irq
-        hw_clear_bits(&timer_hw->intr, 1u << ALARM_NUM);
-        
-        // You can now check if it's the time for the alarm you set
-        node_t *current_node = list_remove_first();
-        if (current_node != NULL) {
-            if (current_node->timer_value == timer_hw->timerawl) {
-                // Handle the timer event, e.g., print "Timer Fired!"
-                printf("Timer Fired!\n");
-                // Free the node if you don't need it anymore
-                current_node->callback(); // Call the associated callback
-                free(current_node);
-            }
-        }
+        led_on=!led_on;
+        gpio_put(PICO_DEFAULT_LED_PIN, led_on);
+        printf("LED State: %b\n", led_on);
+
+        free(list_remove_first());
+        // hw_clear_bits(&timer_hw->intr, 1u << ALARM_NUM);
+
+        virtual_timer_init();
+        node_t* address=virtual_timer_start(linked_list->timer_value,NULL);
+        printf("Timer Start ID:%p\n",address);
+        // // You can now check if it's the time for the alarm you set
+        // node_t *current_node = list_remove_first();
+        // if (current_node != NULL) {
+        //     if (current_node->timer_value == timer_hw->timerawl) {
+        //         // Handle the timer event, e.g., print "Timer Fired!"
+        //         printf("Timer Fired!\n");
+        //         // Free the node if you don't need it anymore
+        //         current_node->callback(); // Call the associated callback
+        //         free(current_node);
+        //     }
+        // }
     }
     void virtual_timer_init(void){
         /* TODO */
@@ -133,10 +141,13 @@ main reactor {
         hw_set_bits(&timer_hw->inte, 1u << ALARM_NUM);
 
         // Set irq handler for alarm irq
-        irq_set_exclusive_handler(ALARM_IRQ, alarm_irq);
+        irq_set_exclusive_handler(ALARM_IRQ, linked_list->callback);
 
         // Enable the alarm irq
         irq_set_enabled(ALARM_IRQ, true);
+        
+        // printf("timer init\n
+        // Set irq handler");
 
         // Enable interrupt in block and at processor
         // You might need to adjust this based on your hardware setup
@@ -144,116 +155,122 @@ main reactor {
     uint32_t virtual_timer_start(uint32_t microseconds, virtual_timer_callback_t cb){
         /* TODO */
          // Calculate the target time
-        uint64_t target = timer_hw->timerawl + microseconds;
+        uint64_t target = timer_hw->timerawl + linked_list->timer_value;
 
         // Write the lower 32 bits of the target time to the alarm to arm it
         timer_hw->alarm[ALARM_NUM] = (uint32_t)target;
 
+        // printf("timer start\n");
         // Insert this timer into the linked list based on the timer_value
-        node_t *new_node = malloc(sizeof(node_t));
-        new_node->timer_value = target;
-        new_node->callback = cb; // Store the callback function pointer
 
-        list_insert_sorted(new_node);
 
         // Return the time ID or handle for this timer, you can use it to cancel the timer if needed
-        return (uint32_t)new_node;
+        return linked_list;
     }
-    uint32_t virtual_timer_start_repeated(uint32_t microseconds, virtual_timer_callback_t cb){
-        /* TODO */
-        // Calculate the target time
-    uint64_t target = timer_hw->timerawl + microseconds;
+    // uint32_t virtual_timer_start_repeated(uint32_t microseconds, virtual_timer_callback_t cb){
+    //     /* TODO */
+    //     // Calculate the target time
+    // uint64_t target = timer_hw->timerawl + microseconds;
 
-        // Write the lower 32 bits of the target time to the alarm to arm it
-        timer_hw->alarm[ALARM_NUM] = (uint32_t)target;
+    //     // Write the lower 32 bits of the target time to the alarm to arm it
+    //     timer_hw->alarm[ALARM_NUM] = (uint32_t)target;
 
-        // Check if a timer with the same callback function already exists in the linked list
-        node_t* current_node = linked_list;
-        while (current_node != NULL) {
-            if (current_node->callback == cb) {
-                // Update the timer value for the repeated timer
-                current_node->timer_value = target;
-                return (uint32_t)current_node;
-            }
-            current_node = current_node->next;
-        }
+    //     // Check if a timer with the same callback function already exists in the linked list
+    //     node_t* current_node = linked_list;
+    //     while (current_node != NULL) {
+    //         if (current_node->callback == cb) {
+    //             // Update the timer value for the repeated timer
+    //             current_node->timer_value = target;
+    //             return (uint32_t)current_node;
+    //         }
+    //         current_node = current_node->next;
+    //     }
 
-        // If a timer with the same callback doesn't exist, create a new node
-        node_t* new_node = malloc(sizeof(node_t));
-        new_node->timer_value = target;
-        new_node->callback = cb;
+    //     // If a timer with the same callback doesn't exist, create a new node
+    //     node_t* new_node = malloc(sizeof(node_t));
+    //     new_node->timer_value = target;
+    //     new_node->callback = cb;
 
-        // Insert the new timer into the linked list based on the timer_value
-        list_insert_sorted(new_node);
+    //     // Insert the new timer into the linked list based on the timer_value
+    //     list_insert_sorted(new_node);
 
-        // Return the time ID or handle for this timer
-        return (uint32_t)new_node;
-    }
-    void virtual_timer_cancel(uint32_t time_id ){
-        /* TODO */
-        // Convert the time_id back to a node pointer
-        node_t *timer_to_cancel = (node_t *)time_id;
+    //     // Return the time ID or handle for this timer
+    //     return (uint32_t)new_node;
+    // }
+    // void virtual_timer_cancel(uint32_t time_id ){
+    //     /* TODO */
+    //     // Convert the time_id back to a node pointer
+    //     node_t *timer_to_cancel = (node_t *)time_id;
 
-        // Check if the linked list is empty
-        if (linked_list == NULL) {
-            return;  // Nothing to cancel
-        }
+    //     // Check if the linked list is empty
+    //     if (linked_list == NULL) {
+    //         return;  // Nothing to cancel
+    //     }
 
-        // Check if the timer to cancel is the head of the linked list
-        if (linked_list == timer_to_cancel) {
-            // Update the alarm register to the next timer's value, or 0 if the list is empty
-            if (linked_list->next != NULL) {
-                timer_hw->alarm[ALARM_NUM] = linked_list->next->timer_value;
-            } else {
-                timer_hw->alarm[ALARM_NUM] = 0;
-            }
+    //     // Check if the timer to cancel is the head of the linked list
+    //     if (linked_list == timer_to_cancel) {
+    //         // Update the alarm register to the next timer's value, or 0 if the list is empty
+    //         if (linked_list->next != NULL) {
+    //             timer_hw->alarm[ALARM_NUM] = linked_list->next->timer_value;
+    //         } else {
+    //             timer_hw->alarm[ALARM_NUM] = 0;
+    //         }
 
-            // Remove the head of the linked list
-            list_remove_first();
-            free(timer_to_cancel);
-            return;
-        }
+    //         // Remove the head of the linked list
+    //         list_remove_first();
+    //         free(timer_to_cancel);
+    //         return;
+    //     }
 
-        // If the timer to cancel is not the head, find and remove it
-        node_t *prev_node = linked_list;
-        node_t *curr_node = linked_list->next;
+    //     // If the timer to cancel is not the head, find and remove it
+    //     node_t *prev_node = linked_list;
+    //     node_t *curr_node = linked_list->next;
 
-        while (curr_node != NULL && curr_node != timer_to_cancel) {
-            prev_node = curr_node;
-            curr_node = curr_node->next;
-        }
+    //     while (curr_node != NULL && curr_node != timer_to_cancel) {
+    //         prev_node = curr_node;
+    //         curr_node = curr_node->next;
+    //     }
 
-        if (curr_node == timer_to_cancel) {
-            // Update the alarm register to the next timer's value
-            prev_node->next = curr_node->next;
-            timer_hw->alarm[ALARM_NUM] = (uint32_t)prev_node->next->timer_value;
-            free(timer_to_cancel);
-        }
-    }
+    //     if (curr_node == timer_to_cancel) {
+    //         // Update the alarm register to the next timer's value
+    //         prev_node->next = curr_node->next;
+    //         timer_hw->alarm[ALARM_NUM] = (uint32_t)prev_node->next->timer_value;
+    //         free(timer_to_cancel);
+    //     }
+    // }
 
   =}
 
 
-  timer print_hw_timer(0, 5000ms)
+  timer print_hw_timer(0, 1000ms);
 
   reaction(startup) {=
       // initialize the LED and the virtual timer    
       gpio_init(PICO_DEFAULT_LED_PIN);
       gpio_set_dir(PICO_DEFAULT_LED_PIN, GPIO_OUT);
-      gpio_put(25, true);
+      gpio_put(PICO_DEFAULT_LED_PIN, !led_on);
+    //   printf("hello everyone");
+      for(int i=0;i<1000;i++){
+        node_t *new_node = malloc(sizeof(node_t));
+        new_node->timer_value = 1000000;
+        new_node->callback = lab5_timer_irq_handler; // Store the callback function pointer
+        list_insert_sorted(new_node);
+      }
       virtual_timer_init();
+      virtual_timer_start(NULL);
+    // // Create a timer that toggles the LED every 1 second
+    // uint32_t timer_id = virtual_timer_start_tf("hello everyone");
+    //   virtual_timer_init();
+    //   virtual_timer_start(5000000,NULL);peated(1000000, toggle_led_callback);
 
-    // Create a timer that toggles the LED every 1 second
-    uint32_t timer_id = virtual_timer_start_repeated(1000000, toggle_led_callback);
-
-    // Cancel the timer after 5 seconds (5000000 microseconds)
-    virtual_timer_start(5000000, virtual_timer_cancel, timer_id);
+    // // Cancel the timer after 5 seconds (5000000 microseconds)
+    // virtual_timer_start(5000000, virtual_timer_cancel, timer_id);
   =}
   
   reaction(print_hw_timer){=
       /* TODO for 9.2.2 */
         uint32_t timerValue = timer_hw->timelr;
-        printf("%u\n,timerValue");
+        printf("%u\n",timerValue);
   =}
 
   /* TODO: add reaction and timer to create the environment to test */
