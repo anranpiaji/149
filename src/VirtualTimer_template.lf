@@ -187,47 +187,26 @@ main reactor {
       // Return the time ID or handle for this timer
       return 0;
     }
-    // void virtual_timer_cancel(uint32_t time_id ){
-    //     /* TODO */
-    //     // Convert the time_id back to a node pointer
-    //     node_t *timer_to_cancel = (node_t *)time_id;
+    void virtual_timer_cancel(uint32_t time_id ){
+        /* TODO */
+        
+        node_t *current_node=linked_list;
 
-    //     // Check if the linked list is empty
-    //     if (linked_list == NULL) {
-    //         return;  // Nothing to cancel
-    //     }
+      if (current_node->timer_value==time_id){
+        list_remove(current_node);
+        free(current_node);
+      }
+        
 
-    //     // Check if the timer to cancel is the head of the linked list
-    //     if (linked_list == timer_to_cancel) {
-    //         // Update the alarm register to the next timer's value, or 0 if the list is empty
-    //         if (linked_list->next != NULL) {
-    //             timer_hw->alarm[ALARM_NUM] = linked_list->next->timer_value;
-    //         } else {
-    //             timer_hw->alarm[ALARM_NUM] = 0;
-    //         }
-
-    //         // Remove the head of the linked list
-    //         list_remove_first();
-    //         free(timer_to_cancel);
-    //         return;
-    //     }
-
-    //     // If the timer to cancel is not the head, find and remove it
-    //     node_t *prev_node = linked_list;
-    //     node_t *curr_node = linked_list->next;
-
-    //     while (curr_node != NULL && curr_node != timer_to_cancel) {
-    //         prev_node = curr_node;
-    //         curr_node = curr_node->next;
-    //     }
-
-    //     if (curr_node == timer_to_cancel) {
-    //         // Update the alarm register to the next timer's value
-    //         prev_node->next = curr_node->next;
-    //         timer_hw->alarm[ALARM_NUM] = (uint32_t)prev_node->next->timer_value;
-    //         free(timer_to_cancel);
-    //     }
-    // }
+        if (curr_node == linked_list) {
+            if(linked_list!=NULL){
+              time_hw->alarm[ALARM_NUM]=LINKED_LIST->TIME_VALUE;
+            }else
+            {
+              hw_clear_bits(&timer_hw->inte,1u<<ALARM_NUM);
+            }
+        }
+    }
 
   =}
 
